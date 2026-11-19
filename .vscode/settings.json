@@ -1,0 +1,13 @@
+{
+  // 在项目内打开自动折行，折行宽度 80 列（窗口更窄时按窗口宽度折行）
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 80,
+  "editor.wrappingIndent": "same",
+
+  "editor.minimap.enabled": true,
+
+  // Markdown 源码不显示 minimap（markdown 多为长行/表格，折行后 minimap 意义不大）
+  "[markdown]": {
+    "editor.minimap.enabled": false
+  }
+}
