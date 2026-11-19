@@ -3,7 +3,7 @@ factory: new-daily-note
 used to create a new daily note in the vault.
 
 usage:
-    uv run .dotfiles/factories/new-daily-note.py [DATE]
+    uv run .dotfiles/factories/new-daily.py [DATE]
 
 DATE defaults to the date of running time and accepts:
     - today / yesterday / tomorrow
@@ -25,7 +25,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 # const vars
-TEMPLATE_PATH = ".dotfiles/templates/daily-note.md"
+TEMPLATE_PATH = ".dotfiles/templates/template-daily.md"
 GENERATE_TARGET = "daily-notes"
 
 # repo root is two levels above this script (.dotfiles/factories/<script>)
